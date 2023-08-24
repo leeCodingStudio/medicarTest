@@ -4,89 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#28323C"
+    tools:context="com.example.test.MainActivity">
 
-    <TextureView
-        android:id="@+id/textureView"
-        android:layout_width="393dp"
-        android:layout_height="627dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout3"
-        app:layout_constraintVertical_bias="0.3"
-        tools:layout_editor_absoluteX="1dp"
-        tools:ignore="MissingConstraints">
-
-    </TextureView>
-
-    <FrameLayout
-        android:id="@+id/frameLayout3"
-        android:layout_width="420dp"
-        android:layout_height="52dp"
-        android:background="#28323C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="-4dp">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="420dp"
-        android:layout_height="111dp"
-        android:background="#28323C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/captureButton"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button"
-            android:contentDescription="@string/capture_button"
-            android:drawableEnd="@drawable/cap"
-            android:gravity="center"
-            android:padding="18dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-    </FrameLayout>
-
-    <Button
-        android:id="@+id/button_before"
-        android:layout_width="119dp"
-        android:layout_height="50dp"
-        android:background="#00FFFFFF"
-        android:text="이전"
-        android:textColorHighlight="#00FFFFFF"
-        android:textColorLink="#00FFFFFF"
-        android:textSize="22sp"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="262dp"
+        android:layout_height="89dp"
+        android:text="MedicarTest"
+        android:textAlignment="center"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textureView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
 
     <Button
-        android:id="@+id/button_after"
-        android:layout_width="119dp"
-        android:layout_height="50dp"
-        android:background="#00FFFFFF"
-        android:text="확인"
-        android:textColorHighlight="#00FFFFFF"
-        android:textColorLink="#00FFFFFF"
-        android:textSize="22sp"
-        android:textStyle="bold"
+        android:id="@+id/camera_on"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:drawableTop="@drawable/icon"
+        android:duplicateParentState="false"
+        android:focusableInTouchMode="true"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="촬영하기"
+        android:textAlignment="center"
+        android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textureView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="246dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="73dp"
+        android:drawingCacheQuality="auto"
+        app:layout_constraintBottom_toTopOf="@+id/camera_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845"
+        app:srcCompat="@drawable/car" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

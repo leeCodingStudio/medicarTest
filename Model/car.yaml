@@ -1,0 +1,8 @@
+train: C:\Users\sangdal\Desktop\project_car\dataset\train\images
+val: C:\Users\sangdal\Desktop\project_car\dataset\val\images
+nc: 4
+names: 
+ 0: Scratched
+ 1: Crushed
+ 2: Breakage
+ 3: Separated

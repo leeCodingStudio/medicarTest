@@ -42,3 +42,4 @@
 
 ---
 
+![슬라이드25 PNG](https://github.com/leeCodingStudio/medicarTest/assets/115694780/8eb3740a-596e-4ba6-bed7-dfaa3560b537)

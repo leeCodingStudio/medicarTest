@@ -1,4 +1,7 @@
 # medicarTest
+- [Notion 포트폴리오](https://morning-collarbone-330.notion.site/Android-MedicarTest-a27e4207b40246ec80caaa19708c0919)
+
+---
 
 ### 개발 범위
 
@@ -34,3 +37,8 @@
 
 - PyTorch
 - YOLOv8
+
+### 동작 화면
+
+---
+
